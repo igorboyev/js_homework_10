@@ -1,4 +1,4 @@
-# js_homework_9
+# js_homework_10
 // arguments
 
 // function sum(arr){
