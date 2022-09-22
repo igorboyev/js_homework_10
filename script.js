@@ -6,7 +6,7 @@ const products = [
 ];
 
 function getPrice(arr, seasonFunc) {
-    let copiedProducts = arr;
+    let copiedProducts = JSON.parse(JSON.stringify(arr));
     let price = 0;
     for (let i=0; i<copiedProducts.length; i++) {
         typeof seasonFunc === `function` ? price += seasonFunc(copiedProducts[i][1]) : price += copiedProducts[i][1]
